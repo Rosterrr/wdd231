@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Tags for accessibility and SEO -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Title and Description for SEO -->
+    <title>San Miguel Chamber of Commerce Directory</title>
+    <meta name="description" content="Explore the San Miguel Chamber of Commerce directory to discover local businesses, services, and community resources.">
+    <meta name="author" content="Your Full Name">
+
+    <!-- Facebook Open Graph Meta Tags -->
+    <meta property="og:title" content="San Miguel Chamber of Commerce Directory">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://example.com/path/to/your-image.jpg"> <!-- Replace with your image URL -->
+    <meta property="og:url" content="https://example.com/directory.html">
+
+    <!-- Favicon for the website -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Link to External Stylesheets -->
+    <link rel="stylesheet" href="styles/base.css">
+</head>
+
+<body>
+    <!-- Page Content -->
+    <header>
+        <nav>
+            <div class="navbar-toggle" onclick="toggleMenu()">Menu</div>
+            <ul id="nav-list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <main>
+            <section class="directory">
+                <div class="member-card">
+                    <h3>Business Name 1</h3>
+                    <p>Category: Restaurant</p>
+                    <p>Location: San Miguel, El Salvador</p>
+                    <p>Contact: 123-456-7890</p>
+                </div>
+                <div class="member-card">
+                    <h3>Business Name 2</h3>
+                    <p>Category: Retail</p>
+                    <p>Location: San Miguel, El Salvador</p>
+                    <p>Contact: 987-654-3210</p>
+                </div>
+                <!-- Add more member cards here -->
+            </section>
+        </main>
+        
+    </main>
+
+    <footer>
+        <!-- Footer with contact info and development details -->
+        <p>Contact Us: rodrigochanta331@gmail.com | Phone: 77888556</p>
+        <p>Website developed by Rodrigo Chanta, WDD 231</p>
+        <p>Last Modified: <span id="last-modified-date"></span></p>
+    </footer>
+
+    <!-- JavaScript for dynamically updating the last modified date -->
+    <script>
+        document.getElementById("last-modified-date").textContent = document.lastModified;
+    </script>
+    <script>
+        function toggleMenu() {
+            const navList = document.getElementById('nav-list');
+            navList.classList.toggle('show');
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>

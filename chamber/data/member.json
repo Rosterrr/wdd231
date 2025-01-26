@@ -1,0 +1,66 @@
+[
+    {
+      "name": "Smith & Co. Law",
+      "address": "123 Main St, San Miguel, El Salvador",
+      "phone": "(503) 123-4567",
+      "website": "http://www.smithlaw.com",
+      "image": "smith-co.jpg",
+      "membership_level": 3,
+      "other_info": "Specializing in business law."
+    },
+    {
+      "name": "El Salvador Realty",
+      "address": "456 Elm St, San Miguel, El Salvador",
+      "phone": "(503) 234-5678",
+      "website": "http://www.elsalvadorrealty.com",
+      "image": "elsalvador-realty.jpg",
+      "membership_level": 2,
+      "other_info": "Experts in residential and commercial properties."
+    },
+    {
+      "name": "Tech Hub Solutions",
+      "address": "789 Pine St, San Miguel, El Salvador",
+      "phone": "(503) 345-6789",
+      "website": "http://www.techhubsolutions.com",
+      "image": "tech-hub.jpg",
+      "membership_level": 1,
+      "other_info": "Innovative IT solutions for businesses."
+    },
+    {
+      "name": "Fashion Forward",
+      "address": "123 Fashion Ave, San Miguel, El Salvador",
+      "phone": "(503) 456-7890",
+      "website": "http://www.fashionforward.com",
+      "image": "fashion-forward.jpg",
+      "membership_level": 3,
+      "other_info": "Trendy clothing for all ages."
+    },
+    {
+      "name": "Green Landscaping",
+      "address": "321 Green Rd, San Miguel, El Salvador",
+      "phone": "(503) 567-8901",
+      "website": "http://www.greenlandscaping.com",
+      "image": "green-landscaping.jpg",
+      "membership_level": 2,
+      "other_info": "Landscaping services for residential and commercial properties."
+    },
+    {
+      "name": "Cafe El Salvador",
+      "address": "654 Coffee St, San Miguel, El Salvador",
+      "phone": "(503) 678-9012",
+      "website": "http://www.cafeelsalvador.com",
+      "image": "cafe-elsalvador.jpg",
+      "membership_level": 1,
+      "other_info": "Best coffee in the region!"
+    },
+    {
+      "name": "Global Logistics",
+      "address": "987 Global St, San Miguel, El Salvador",
+      "phone": "(503) 789-0123",
+      "website": "http://www.globallogistics.com",
+      "image": "global-logistics.jpg",
+      "membership_level": 2,
+      "other_info": "Shipping and delivery solutions worldwide."
+    }
+  ]
+  
