@@ -1,0 +1,190 @@
+:root {
+    --primary-color: #1a73e8;
+    --secondary-color: #fbbc05;
+    --accent-color: #34a853;
+    --background-color: #ffffff;
+    --text-color: #333333;
+    --font-body: 'Arial', sans-serif;
+    --font-heading: 'Georgia', serif;
+    --max-width: 800px;
+    --padding-global: 1.5rem;
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--text-color);
+    background-color: var(--background-color);
+    line-height: 1.6;
+    padding: var(--padding-global);
+}
+
+header, footer {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.form-container {
+    max-width: var(--max-width);
+    margin: 2rem auto;
+    padding: 2rem;
+    border: 1px solid var(--secondary-color);
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1, h2 {
+    font-family: var(--font-heading);
+    color: var(--primary-color);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+label {
+    font-weight: bold;
+    text-align: left;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid var(--text-color);
+    border-radius: 4px;
+}
+
+button.btn-submit {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+}
+
+button.btn-submit:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Membership Card Hover Animation */
+.membership-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.membership-card {
+    background-color: #ffffff;
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    width: calc(25% - 1rem); /* Adjust width for responsiveness */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.membership-card h2 {
+    color: var(--primary-color);
+}
+
+.membership-card:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* More prominent shadow on hover */
+}
+
+.membership-card button {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.membership-card button:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Modal Style */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent background */
+}
+
+.modal-content {
+    background-color: #ffffff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+    width: 80%;
+    max-width: 500px;
+}
+
+.close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    transition: color 0.3s ease;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Thank You Page */
+.thank-you-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: var(--font-body);
+    text-align: center;
+}
+
+.thank-you-message {
+    padding: 2rem;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    border: 1px solid var(--primary-color);
+    width: 80%;
+    max-width: 600px;
+}
+
+.thank-you-message h1 {
+    color: var(--primary-color);
+    font-family: var(--font-heading);
+    margin-bottom: 1rem;
+}
+
+.thank-you-message p {
+    color: var(--text-color);
+    font-size: 1rem;
+}
