@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Course Home Page</title>
+  <link rel="stylesheet" href="styles/larger.css" />
+  <link rel="stylesheet" href="styles/small.css" />
+</head>
+<body>
+  <header>
+    <h1>My Courses</h1>
+  </header>
+
+  <main>
+    <!-- Filter Buttons -->
+    <section class="filters">
+      <button id="all-btn">All</button>
+      <button id="wdd-btn">WDD</button>
+      <button id="cse-btn">CSE</button>
+    </section>
+
+    <!-- Course List Container -->
+    <section id="courses-container"></section>
+
+    <!-- Total Credits -->
+    <section>
+      <p>Total Credits: <span id="totalCredits">0</span></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> | Last Modified: <span id="lastModified"></span></p>
+  </footer>
+
+  <script type="module" src="scripts/course.js" defer></script>
+   <script type="module" src="scripts/dates.js" defer></script>
+    <script type="module" src="scripts/navigation.js" defer></script>
+</body>
+</html>
+

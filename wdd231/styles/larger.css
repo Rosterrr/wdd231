@@ -1,0 +1,46 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 1rem;
+  background-color: #f0f0f0;
+}
+
+header, footer {
+  background-color: #004466;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.filters {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.filters button {
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  cursor: pointer;
+}
+
+#courses-container {
+  display: grid;
+  gap: 1rem;
+}
+
+.course-card {
+  background-color: #ffffff;
+  padding: 1rem;
+  border-left: 5px solid transparent;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+.course-card.completed {
+  background-color: #e6ffe6;
+  border-left: 5px solid green;
+}
+
+footer span {
+  font-weight: bold;
+}
