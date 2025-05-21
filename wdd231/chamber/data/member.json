@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Sunrise Bakery",
+    "address": "123 Main St, Sunnyville",
+    "phone": "(123) 456-7890",
+    "website": "https://sunrisebakery.com",
+    "image": "sunrise-bakery.jpg",
+    "membership": 3
+  },
+  {
+    "name": "GreenTech Solutions",
+    "address": "456 Oak Ave, Greenfield",
+    "phone": "(234) 567-8901",
+    "website": "https://greentech.com",
+    "image": "greentech.jpg",
+    "membership": 2
+  },
+  {
+    "name": "Mountain Outfitters",
+    "address": "789 Hill Rd, Ridgeway",
+    "phone": "(345) 678-9012",
+    "website": "https://mountainoutfitters.com",
+    "image": "mountain-outfitters.jpg",
+    "membership": 1
+  },
+  {
+    "name": "Luna Yoga",
+    "address": "234 Moon St, Tranquility",
+    "phone": "(456) 789-0123",
+    "website": "https://lunayoga.com",
+    "image": "luna-yoga.jpg",
+    "membership": 2
+  },
+  {
+    "name": "Ace Hardware",
+    "address": "321 Tool Ln, Handyville",
+    "phone": "(567) 890-1234",
+    "website": "https://acehardware.com",
+    "image": "ace-hardware.jpg",
+    "membership": 1
+  },
+  {
+    "name": "Spark Digital",
+    "address": "987 Byte Blvd, Silicon City",
+    "phone": "(678) 901-2345",
+    "website": "https://sparkdigital.com",
+    "image": "spark-digital.jpg",
+    "membership": 3
+  },
+  {
+    "name": "Bloom Florist",
+    "address": "654 Flower Dr, Blossomtown",
+    "phone": "(789) 012-3456",
+    "website": "https://bloomflorist.com",
+    "image": "bloom-florist.jpg",
+    "membership": 2
+  }
+]
