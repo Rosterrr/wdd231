@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join - Chamber of Commerce</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <img src="images/attachment_66647665.jpeg" alt="Chamber of Commerce Logo">
+      <h1>Chamber of Commerce</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html" class="active">Join</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Join Section -->
+  <section class="join-form">
+    <h2>Join the Chamber of Commerce</h2>
+    <p>Fill out the form below to become a member. We will contact you as soon as possible.</p>
+
+    <form action="#" method="post">
+      <!-- Personal Info -->
+      <label for="fname">First Name*</label>
+      <input type="text" id="fname" name="fname" required>
+
+      <label for="lname">Last Name*</label>
+      <input type="text" id="lname" name="lname" required>
+
+      <label for="email">Email*</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone</label>
+      <input type="tel" id="phone" name="phone">
+
+      <!-- Business Info -->
+      <label for="bname">Business Name*</label>
+      <input type="text" id="bname" name="bname" required>
+
+      <label for="website">Business Website</label>
+      <input type="url" id="website" name="website">
+
+      <label for="address">Business Address</label>
+      <input type="text" id="address" name="address">
+
+      <!-- Membership Level -->
+      <label for="membership">Membership Level*</label>
+      <select id="membership" name="membership" required>
+        <option value="">-- Select a Level --</option>
+        <option value="gold">Gold</option>
+        <option value="silver">Silver</option>
+        <option value="bronze">Bronze</option>
+        <option value="non-profit">Non-Profit</option>
+      </select>
+
+      <!-- Additional Info -->
+      <label for="description">Business Description</label>
+      <textarea id="description" name="description" rows="5"></textarea>
+
+      <!-- Submit -->
+      <button type="submit">Submit Application</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 My City Chamber of Commerce</p>
+    <p>Contact: info@chamber.com | Phone: (503) 555-5555</p>
+  </footer>
+</body>
+</html>
