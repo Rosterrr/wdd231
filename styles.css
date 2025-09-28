@@ -1,0 +1,62 @@
+/* Color Schema */
+:root {
+  --primary-color: #2E8B57; /* Green – used for headings, accents */
+  --secondary-color: #F4A300; /* Warm Yellow – highlights/buttons */
+  --body-bg: #fdfdfd; /* light background */
+  --text-color: #333;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--body-bg);
+  color: var(--text-color);
+  margin: 0;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--primary-color);
+}
+
+section {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border-left: 5px solid var(--secondary-color);
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.wireframes img {
+  max-width: 100%;
+  border: 2px dashed var(--primary-color);
+  padding: 5px;
+  background: #fafafa;
+}
+
+.color-samples {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.color-swatch {
+  width: 80px;
+  height: 40px;
+  border: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 0.8rem;
+}
+
+.primary {
+  background-color: var(--primary-color);
+}
+
+.secondary {
+  background-color: var(--secondary-color);
+  color: #000;
+}
