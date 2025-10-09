@@ -1,0 +1,150 @@
+/* discover.css — styled to match css/styles.css */
+
+/* Page intro */
+.intro {
+  max-width: 1100px;
+  margin: 1rem auto;
+  padding: 0 1rem;
+}
+.muted { color:#6b7280; }
+
+/* Visitor message (localStorage) */
+.visit-msg {
+  position: relative;
+  margin: 1rem auto;
+  max-width: 1100px;
+  background: #eef6ff;
+  color: #0b2b55;
+  border: 1px solid #cfe4ff;
+  border-radius: 1rem;            /* matches your card radius */
+  padding: .8rem 2.5rem .8rem 1rem;
+}
+.visit-close {
+  position: absolute;
+  right: .6rem;
+  top: .45rem;
+  border: 0;
+  background: transparent;
+  font-size: 1.25rem;
+  line-height: 1;
+  color: #0b2b55;
+  cursor: pointer;
+}
+
+/* Grid container with named areas (small/medium/large) */
+.discover-grid {
+  display: grid;
+  gap: 1rem;
+  max-width: 1100px;
+  margin: 0 auto 2rem;
+  padding: 0 1rem 1rem;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "item1"
+    "item2"
+    "item3"
+    "item4"
+    "item5"
+    "item6"
+    "item7"
+    "item8";
+}
+
+/* Medium screens: 2 columns */
+@media (min-width: 641px) and (max-width: 1024px){
+  .discover-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "item1 item2"
+      "item3 item4"
+      "item5 item6"
+      "item7 item8";
+  }
+}
+
+/* Large screens: 3 columns with a featured span */
+@media (min-width: 1025px){
+  .discover-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "item1 item2 item3"
+      "item4 item5 item6"
+      "item7 item8 item8";
+  }
+}
+
+/* Cards — match your sections (white panel, light border, rounded) */
+.card {
+  background: #fff;
+  border: 1px solid #e4e8f0;
+  border-radius: 1rem;
+  padding: 1rem;
+  display: grid;
+  gap: .65rem;
+}
+.card h2 {
+  font-size: 1.1rem;
+  margin: 0;
+  color: #111;
+}
+
+/* Media block */
+.card figure {
+  margin: 0;
+  overflow: hidden;
+  border-radius: .8rem;
+  border: 1px solid #e4e8f0;
+}
+.card figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Hover image effect — only tablet/desktop (disable on mobile) */
+@media (min-width: 641px){
+  .card figure img {
+    transition: transform .35s ease, filter .35s ease, box-shadow .35s ease;
+  }
+  .card:hover figure img {
+    transform: scale(1.035);
+    filter: saturate(1.06) contrast(1.04);
+    box-shadow: 0 8px 24px rgba(17,48,95,.12);
+  }
+}
+
+.card address {
+  font-style: normal;
+  color: #374151;
+}
+.card p {
+  margin: 0;
+  color: #374151;
+}
+
+/* Buttons — match your .cta-button style */
+.btn {
+  display: inline-block;
+  background: linear-gradient(180deg, #66d9ff, #4dbfe5);
+  color: #001018;
+  border: none;
+  padding: .7rem 1rem;
+  border-radius: .7rem;          /* same radius as .cta-button */
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+}
+.btn:focus-visible {
+  outline: 3px solid #ffd166;
+  outline-offset: 2px;
+}
+
+/* Bind each card to a named grid area */
+.card[data-area="item1"]{ grid-area: item1; }
+.card[data-area="item2"]{ grid-area: item2; }
+.card[data-area="item3"]{ grid-area: item3; }
+.card[data-area="item4"]{ grid-area: item4; }
+.card[data-area="item5"]{ grid-area: item5; }
+.card[data-area="item6"]{ grid-area: item6; }
+.card[data-area="item7"]{ grid-area: item7; }
+.card[data-area="item8"]{ grid-area: item8; }

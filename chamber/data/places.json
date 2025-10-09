@@ -1,0 +1,66 @@
+[
+  {
+    "name": "City Museum",
+    "address": "100 Heritage Ave, My City",
+    "image": "museum.webp",
+    "caption": "Permanent and rotating exhibits.",
+    "description": "Explore local history and culture with interactive exhibits and guided tours.",
+    "url": "#"
+  },
+  {
+    "name": "Botanical Garden",
+    "address": "22 Greenway Blvd, My City",
+    "image": "garden.webp",
+    "caption": "Native and exotic plant collections.",
+    "description": "A living museum featuring seasonal blooms, a butterfly house, and family programs.",
+    "url": "#"
+  },
+  {
+    "name": "Central Library",
+    "address": "5 Knowledge St, My City",
+    "image": "library.webp",
+    "caption": "Co-working & workshops.",
+    "description": "Free events, workshops, and meeting rooms for entrepreneurs and residents.",
+    "url": "#"
+  },
+  {
+    "name": "Riverwalk Park",
+    "address": "200 Riverfront Dr, My City",
+    "image": "riverwalk.webp",
+    "caption": "Trails and public art.",
+    "description": "Walk, cycle, or picnic along the river—popular venue for markets and festivals.",
+    "url": "#"
+  },
+  {
+    "name": "Farmers Market",
+    "address": "Market Square, My City",
+    "image": "market.webp",
+    "caption": "Local produce & artisans.",
+    "description": "Open weekends year-round. Great for fresh foods and meeting local makers.",
+    "url": "#"
+  },
+  {
+    "name": "Innovation Hub",
+    "address": "350 Startup Ln, My City",
+    "image": "innovation.webp",
+    "caption": "Coworking & accelerator.",
+    "description": "Startup incubator offering mentorship, training, and demo days.",
+    "url": "#"
+  },
+  {
+    "name": "Historic Theater",
+    "address": "12 Main St, My City",
+    "image": "theater.webp",
+    "caption": "Restored 1920s venue.",
+    "description": "Live performances, film nights, and community events in a classic setting.",
+    "url": "#"
+  },
+  {
+    "name": "Arts District",
+    "address": "8th & Gallery Row, My City",
+    "image": "artdistrict.webp",
+    "caption": "Studios & galleries.",
+    "description": "Monthly art walks, open studios, and public installations.",
+    "url": "#"
+  }
+]

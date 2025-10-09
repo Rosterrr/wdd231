@@ -1,0 +1,73 @@
+[
+  {
+    "name": "Acme Manufacturing",
+    "address": "101 Industrial Ave, Your City",
+    "phone": "+1 503 555 0101",
+    "email": "sales@acmemfg.com",
+    "website": "acmemfg.com",
+    "image": "acme.png",
+    "membershipLevel": 3,
+    "description": "Precision metal parts for aerospace and automotive."
+  },
+  {
+    "name": "Northwind Traders",
+    "address": "22 Harbor Rd, Your City",
+    "phone": "+1 503 555 0222",
+    "email": "info@northwindtraders.com",
+    "website": "https://northwindtraders.com",
+    "image": "northwind.png",
+    "membershipLevel": 2,
+    "description": "Import/export specialists for gourmet foods."
+  },
+  {
+    "name": "Globex Consulting",
+    "address": "350 Business Park, Suite 200",
+    "phone": "+1 503 555 0333",
+    "email": "hello@globex.co",
+    "website": "globex.co",
+    "image": "globex.png",
+    "membershipLevel": 1,
+    "description": "Strategy and digital transformation consulting."
+  },
+  {
+    "name": "Initech Software",
+    "address": "404 Silicon Blvd, Tech District",
+    "phone": "+1 503 555 0404",
+    "email": "contact@initech.dev",
+    "website": "https://initech.dev",
+    "image": "initech.png",
+    "membershipLevel": 2,
+    "description": "Bespoke web apps and integrations."
+  },
+  {
+    "name": "Umbrella Health",
+    "address": "12 Wellness Way, Medical Plaza",
+    "phone": "+1 503 555 0505",
+    "email": "support@umbrellahealth.org",
+    "website": "umbrellahealth.org",
+    "image": "umbrella.png",
+    "membershipLevel": 1,
+    "description": "Community clinics and wellness programs."
+  },
+  {
+    "name": "Wonka Confections",
+    "address": "1 Candy Lane, Riverfront",
+    "phone": "+1 503 555 0606",
+    "email": "orders@wonkaconfections.com",
+    "website": "wonkaconfections.com",
+    "image": "wonka.png",
+    "membershipLevel": 3,
+    "description": "Artisanal chocolates and sweets since 1928."
+  },
+  {
+    "name": "Stark Industries",
+    "address": "10880 Malibu Point, CA",
+    "phone": "+1 503 555 0707",
+    "email": "press@starkindustries.com",
+    "website": "starkindustries.com",
+    "image": "stark.png",
+    "membershipLevel": 3,
+    "description": "Advanced energy and engineering solutions."
+  }
+]
+

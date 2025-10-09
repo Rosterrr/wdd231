@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Discover My City — Chamber of Commerce</title>
+  <meta name="description" content="Explore attractions and features of our area. Discover why joining the Chamber benefits your business." />
+
+  <link rel="icon" href="images/attachment_66647665.jpeg" type="image/jpeg" />
+  <!-- ORDER MATTERS: styles.css first, then discover.css -->
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/discover.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Header (same structure as your index.html) -->
+  <header>
+    <div class="logo">
+      <img src="images/attachment_66647665.jpeg" alt="Chamber of Commerce logo" />
+      <h1>Chamber of Commerce</h1>
+    </div>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a class="active" aria-current="page" href="discover.html">Discover</a></li>
+      </ul>
+    </nav>
+  </header>
+
+ <main id="main">
+  <!-- Visit message -->
+  <aside id="visitMessage" class="visit-msg" role="status" aria-live="polite" hidden>
+    <p id="visitText"></p>
+    <button type="button" id="visitClose" class="visit-close" aria-label="Dismiss message">×</button>
+  </aside>
+
+  <section class="intro">
+    <h2>Discover Our Area</h2>
+    <p class="muted">Eight highlights that make our community a great place to live and do business.</p>
+  </section>
+
+  <!-- Paste cards here -->
+  <section class="discover-grid" aria-label="Places of interest" id="discoverGrid" role="list">
+    <article class="card" data-area="item1" role="listitem">
+      <h2>City Museum</h2>
+      <figure>
+        <img src="images/museum.jpg" alt="City Museum photo" width="300" height="200" loading="lazy">
+      </figure>
+      <address>100 Heritage Ave, My City</address>
+      <p>Explore local history and culture with interactive exhibits and guided tours.</p>
+      <a class="btn" href="#" target="" rel="">Learn more</a>
+    </article>
+
+    <!-- Repeat for item2..item8, updating data-area and image/fields -->
+  </section>
+</main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> My City Chamber of Commerce</p>
+    <p>Contact: <a href="mailto:info@chamber.com">info@chamber.com</a> | Phone: <a href="tel:+15035555555">(503) 555-5555</a></p>
+    <p class="muted">Last modified: <span id="lastModified"></span></p>
+  </footer>
+
+  <!-- JS LAST + defer -->
+  <script src="js/discover.js" defer></script>
+</body>
+</html>
+

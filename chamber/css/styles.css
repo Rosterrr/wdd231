@@ -1,0 +1,163 @@
+/* -----------------------------------------------------------
+   Base / Reset
+----------------------------------------------------------- */
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html { line-height: 1.5; -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Arial, sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+}
+
+img { max-width: 100%; height: auto; display: block; }
+
+/* Links */
+a { color: var(--brand); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* Accessibility helpers */
+.skip-link { position: absolute; left: -9999px; }
+.skip-link:focus {
+  left: 1rem; top: 1rem; background: #fff; color: #000;
+  padding: .5rem .75rem; border-radius: .5rem; z-index: 1000;
+}
+.sr-only {
+  position: absolute !important; width: 1px; height: 1px; padding: 0; margin:-1px;
+  overflow: hidden; clip: rect(0,0,0,0); border: 0;
+}
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+
+/* -----------------------------------------------------------
+   Design Tokens (match discover.css)
+----------------------------------------------------------- */
+:root{
+  --bg: #f7f9fc;
+  --panel: #ffffff;
+  --ink: #111111;
+  --muted: #6b7280;
+
+  --border: #e4e8f0;
+
+  --brand: #0b72ff;          /* links */
+  --accent1: #66d9ff;        /* buttons gradient top */
+  --accent1b: #4dbfe5;       /* buttons gradient bottom */
+  --focus: #ffd166;
+
+  --radius-lg: 1rem;
+  --radius-md: .8rem;
+}
+
+/* -----------------------------------------------------------
+   Header / Nav
+----------------------------------------------------------- */
+header {
+  background:#0b1220;
+  color:#fff;
+  border-bottom:1px solid rgba(255,255,255,.15);
+}
+header .logo {
+  display:flex; align-items:center; gap:.75rem; padding:.8rem 1rem;
+}
+header .logo img {
+  width:40px; height:40px; border-radius:.5rem; object-fit:cover;
+}
+header h1 { margin: 0; font-size: 1.15rem; }
+
+nav[aria-label="Primary"] ul {
+  list-style:none; display:flex; gap:.75rem;
+  margin:0; padding:0 1rem 1rem; flex-wrap:wrap;
+}
+nav[aria-label="Primary"] a {
+  display:inline-block; padding:.45rem .7rem; border-radius:.5rem; color:#fff;
+}
+nav[aria-label="Primary"] a.active,
+nav[aria-label="Primary"] a[aria-current="page"] {
+  background:rgba(255,255,255,.12);
+}
+
+/* -----------------------------------------------------------
+   Hero
+----------------------------------------------------------- */
+.hero {
+  position:relative;
+  min-height: 42vh;
+  background: linear-gradient(180deg, #101b34, #0b1220);
+  display:grid; place-items:center; text-align:center;
+}
+.hero-text { color:#fff; padding: 2.2rem 1rem; }
+.hero-text h2 { margin:0 0 .5rem; font-size: clamp(1.6rem, 3.5vw, 2.6rem); }
+
+/* Primary button (matches discover.css .btn) */
+.cta-button, .btn {
+  display:inline-block;
+  background: linear-gradient(180deg, var(--accent1), var(--accent1b));
+  color:#001018;
+  padding:.7rem 1rem;
+  border-radius:.7rem;
+  font-weight:700;
+  border:0;
+  cursor:pointer;
+  text-decoration:none;
+}
+.btn:focus-visible, .cta-button:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+
+/* -----------------------------------------------------------
+   Main sections (index)
+----------------------------------------------------------- */
+main {
+  max-width: 1100px;
+  margin: 1.25rem auto;
+  padding: 0 1rem;
+  display: grid;
+  gap: 1.25rem;
+}
+
+/* Panels used on index: events, weather, spotlights */
+.events, .weather, .spotlights {
+  background: var(--panel);
+  border:1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1rem;
+}
+
+.muted { color: var(--muted); }
+
+.events ul, .weather ul { margin: 0; padding-left: 1.1rem; }
+
+/* Weather forecast list items */
+#forecast .forecast-item { margin:.2rem 0; }
+
+/* Spotlights */
+.spotlight-container {
+  display:grid; gap:1rem; grid-template-columns: 1fr;
+}
+@media (min-width: 720px){
+  .spotlight-container { grid-template-columns: repeat(3, minmax(0,1fr)); }
+}
+.spot {
+  display:grid; grid-template-columns: 56px 1fr; gap:.75rem;
+  background:#f9fbff; border:1px solid var(--border);
+  border-radius:.9rem; padding:.8rem;
+}
+.spot img {
+  width:56px; height:56px; border-radius:.5rem; object-fit:cover; background:#eef3ff;
+}
+.spot h3 { margin:.1rem 0; font-size:1.05rem; }
+.badge {
+  display:inline-block; padding:.15rem .45rem; border:1px solid #d5dbe8;
+  border-radius:.45rem; background:#eef3ff; color:#11305f; font-size:.75rem; margin-left:.4rem;
+}
+.spot p { margin:.2rem 0; color:#374151; }
+
+/* -----------------------------------------------------------
+   Footer
+----------------------------------------------------------- */
+footer {
+  text-align:center; padding:1.25rem; color:#4b5563;
+}
+footer a { color: var(--brand); }

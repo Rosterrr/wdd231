@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chamber of Commerce — Membership Application</title>
+  <meta name="description" content="Apply to join the Chamber of Commerce using this membership application form." />
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/logo.png" type="image/png" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/join.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header>
+    <div class="wrap">
+      <div style="display:flex;align-items:center;gap:1rem;justify-content:space-between;">
+        <a href="index.html" style="display:inline-flex;align-items:center;gap:.5rem;text-decoration:none;color:var(--ink)">
+          <img src="images/logo.png" alt="Chamber logo" width="36" height="36" style="border-radius:.5rem;object-fit:cover" />
+          <strong>Chamber of Commerce</strong>
+        </a>
+        <nav aria-label="Primary">
+          <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html" aria-current="page">Join</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="privacy.html">Privacy</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="wrap">
+    <h1>Membership Application</h1>
+    <p class="help">Complete the form. Required fields must be provided. You can review membership benefits in the cards to the right (or below on small screens).</p>
+
+    <section class="grid" aria-label="Form and membership levels">
+      <!-- FORM -->
+      <form method="get" action="thankyou.html" novalidate aria-labelledby="formTitle">
+        <h2 id="formTitle" class="sr-only">Membership form</h2>
+
+        <!-- First name -->
+        <label title="Enter your first name">
+          <span>First Name <strong>*</strong></span>
+          <input type="text" name="firstName" required autocomplete="given-name" placeholder="John" />
+        </label>
+
+        <!-- Last name -->
+        <label title="Enter your last name">
+          <span>Last Name <strong>*</strong></span>
+          <input type="text" name="lastName" required autocomplete="family-name" placeholder="Smith" />
+        </label>
+
+        <!-- Organization title -->
+        <label title="Your title in the organization (letters, spaces, hyphens only; minimum 7 characters)">
+          <span>Organization Title</span>
+          <input
+            type="text"
+            name="orgTitle"
+            autocomplete="organization-title"
+            pattern="^[A-Za-z\- ]{7,}$"
+            placeholder="e.g., General Manager" />
+          <span class="help">Letters, spaces, and hyphens only. Minimum 7 characters.</span>
+        </label>
+
+        <!-- Email -->
+        <label title="Enter a valid email">
+          <span>Email <strong>*</strong></span>
+          <input type="email" name="email" required autocomplete="email" placeholder="name@example.com" />
+        </label>
+
+        <!-- Mobile -->
+        <label title="Enter your mobile number">
+          <span>Mobile <strong>*</strong></span>
+          <input type="tel" name="phone" required autocomplete="tel" placeholder="+1 555 555 5555" />
+        </label>
+
+        <!-- Organization -->
+        <label title="Legal or trade name of the business/organization">
+          <span>Business/Organization <strong>*</strong></span>
+          <input type="text" name="organization" required autocomplete="organization" placeholder="My Company LLC" />
+        </label>
+
+        <!-- Membership level -->
+        <fieldset>
+          <legend>Membership Level</legend>
+          <div class="radio-row" role="radiogroup" aria-label="Membership levels">
+            <label title="NP no fee"><input type="radio" name="membership" value="np" required /> <span>NP (no fee) <span class="badge">Non-Profit</span></span></label>
+            <label title="Bronze"><input type="radio" name="membership" value="bronze" /> <span>Bronze</span></label>
+            <label title="Silver"><input type="radio" name="membership" value="silver" /> <span>Silver</span></label>
+            <label title="Gold"><input type="radio" name="membership" value="gold" /> <span>Gold</span></label>
+          </div>
+        </fieldset>
+
+        <!-- Description -->
+        <label title="Briefly describe your business or organization">
+          <span>Business/Organization Description</span>
+          <textarea name="orgDescription" placeholder="What does your organization do?"></textarea>
+        </label>
+
+        <!-- Hidden timestamp -->
+        <input type="hidden" id="timestamp" name="timestamp" />
+
+        <div class="actions">
+          <input type="submit" value="Submit Application" />
+          <button type="reset" class="secondary">Clear</button>
+        </div>
+      </form>
+
+      <!-- CARDS + MODALS -->
+      <aside aria-label="Membership levels">
+        <div class="cards" id="membershipCards">
+          <article class="card" aria-labelledby="npTitle">
+            <h3 id="npTitle">NP Membership</h3>
+            <p>For non-profit organizations. <strong>No fee.</strong></p>
+            <p><button type="button" data-dialog="np">View benefits</button></p>
+          </article>
+
+          <article class="card" aria-labelledby="bronzeTitle">
+            <h3 id="bronzeTitle">Bronze Membership</h3>
+            <p>Access to events and basic training.</p>
+            <p><button type="button" data-dialog="bronze">View benefits</button></p>
+          </article>
+
+          <article class="card" aria-labelledby="silverTitle">
+            <h3 id="silverTitle">Silver Membership</h3>
+            <p>Website visibility and increased discounts.</p>
+            <p><button type="button" data-dialog="silver">View benefits</button></p>
+          </article>
+
+          <article class="card" aria-labelledby="goldTitle">
+            <h3 id="goldTitle">Gold Membership</h3>
+            <p>Maximum visibility (home spotlight) and premium perks.</p>
+            <p><button type="button" data-dialog="gold">View benefits</button></p>
+          </article>
+        </div>
+
+        <!-- Modals (<dialog>) -->
+        <dialog id="modal-np" aria-labelledby="modalNpTitle" aria-modal="true" role="dialog">
+          <div class="modal-head">
+            <h2 id="modalNpTitle">Benefits — NP</h2>
+            <form method="dialog"><button type="submit" class="secondary" aria-label="Close">Close</button></form>
+          </div>
+          <div class="modal-body">
+            <ul>
+              <li>No-cost registration</li>
+              <li>Newsletter access</li>
+              <li>Community event entry</li>
+            </ul>
+          </div>
+          <div class="modal-foot">
+            <form method="dialog"><button type="submit">Done</button></form>
+          </div>
+        </dialog>
+
+        <dialog id="modal-bronze" aria-labelledby="modalBronzeTitle" aria-modal="true" role="dialog">
+          <div class="modal-head">
+            <h2 id="modalBronzeTitle">Benefits — Bronze</h2>
+            <form method="dialog"><button type="submit" class="secondary" aria-label="Close">Close</button></form>
+          </div>
+          <div class="modal-body">
+            <ul>
+              <li>All NP benefits</li>
+              <li>Onboarding session</li>
+              <li>5% discount on events</li>
+            </ul>
+          </div>
+          <div class="modal-foot">
+            <form method="dialog"><button type="submit">Done</button></form>
+          </div>
+        </dialog>
+
+        <dialog id="modal-silver" aria-labelledby="modalSilverTitle" aria-modal="true" role="dialog">
+          <div class="modal-head">
+            <h2 id="modalSilverTitle">Benefits — Silver</h2>
+            <form method="dialog"><button type="submit" class="secondary" aria-label="Close">Close</button></form>
+          </div>
+          <div class="modal-body">
+            <ul>
+              <li>All Bronze benefits</li>
+              <li>Featured listing in directory</li>
+              <li>10% discount on events</li>
+              <li>Training package</li>
+            </ul>
+          </div>
+          <div class="modal-foot">
+            <form method="dialog"><button type="submit">Done</button></form>
+          </div>
+        </dialog>
+
+        <dialog id="modal-gold" aria-labelledby="modalGoldTitle" aria-modal="true" role="dialog">
+          <div class="modal-head">
+            <h2 id="modalGoldTitle">Benefits — Gold</h2>
+            <form method="dialog"><button type="submit" class="secondary" aria-label="Close">Close</button></form>
+          </div>
+          <div class="modal-body">
+            <ul>
+              <li>All Silver benefits</li>
+              <li><strong>Homepage spotlight</strong></li>
+              <li>20% discount on events</li>
+              <li>Advertising package</li>
+            </ul>
+          </div>
+          <div class="modal-foot">
+            <form method="dialog"><button type="submit">Done</button></form>
+          </div>
+        </dialog>
+      </aside>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p>&copy; <span id="year"></span> Chamber of Commerce · <a href="privacy.html">Privacy</a></p>
+    </div>
+  </footer>
+
+  <script src="js/join.js" defer></script>
+</body>
+</html>
+
