@@ -1,5 +1,0 @@
-.panel{background:var(--card);border:1px solid var(--border);border-radius:1rem;padding:1rem}
-table{width:100%;border-collapse:collapse;margin-top:.5rem}
-th,td{border-bottom:1px solid var(--border);padding:.6rem .5rem;text-align:left}
-th{color:var(--muted);font-weight:600}
-.btn{display:inline-block;margin-top:1rem;padding:.6rem .9rem;border-radius:.6rem;background:#66d9ff;color:#001018;text-decoration:none;font-weight:700}
